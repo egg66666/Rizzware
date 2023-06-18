@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgeCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgeCalls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgePackages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\win32\jawt_md.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\win32\jni_md.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\classfile_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\jawt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\jdwpTransport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\jni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\jvmti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\include\jvmticmlr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\JNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Includes\MinHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\Classes\Robot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgeCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgeCalls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgePackages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\win32\jawt_md.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\win32\jni_md.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\classfile_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\jawt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\jdwpTransport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\jni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\jvmti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jni\include\jvmticmlr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\MinHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\Classes\EntityPlayerSP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="math\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\Classes\WorldClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JNI\JNI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JNI\Classes\Minecraft.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JNI\Classes\EntityPlayerSP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JNI\Classes\Minecraft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\lib\tzmappings" />
+    <None Include="Dependencies\lib\security\blocked.certs" />
+    <None Include="Dependencies\lib\security\cacerts" />
+    <None Include="Dependencies\lib\security\default.policy" />
+    <None Include="Dependencies\lib\security\public_suffix_list.dat" />
+    <None Include="Dependencies\lib\classlist" />
+    <None Include="Dependencies\lib\ct.sym" />
+    <None Include="Dependencies\lib\fontconfig.bfc" />
+    <None Include="Dependencies\lib\fontconfig.properties.src" />
+    <None Include="Dependencies\lib\jrt-fs.jar" />
+    <None Include="Dependencies\lib\jvm.cfg" />
+    <None Include="Dependencies\lib\modules" />
+    <None Include="Dependencies\lib\psfont.properties.ja" />
+    <None Include="Dependencies\lib\psfontj2d.properties" />
+    <None Include="Dependencies\lib\src.zip" />
+    <None Include="Dependencies\lib\tzdb.dat" />
+    <None Include="Dependencies\lib\jfr\default.jfc" />
+    <None Include="Dependencies\lib\jfr\profile.jfc" />
+    <None Include="Dependencies\jni\lib\jfr\default.jfc" />
+    <None Include="Dependencies\jni\lib\jfr\profile.jfc" />
+    <None Include="Dependencies\jni\lib\security\blocked.certs" />
+    <None Include="Dependencies\jni\lib\security\cacerts" />
+    <None Include="Dependencies\jni\lib\security\default.policy" />
+    <None Include="Dependencies\jni\lib\security\public_suffix_list.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dependencies\jni\lib\jawt.lib" />
+    <Library Include="Dependencies\jni\lib\jvm.lib" />
+    <Library Include="Dependencies\MinHook\libMinHook-x86-v141-mt.lib" />
+  </ItemGroup>
+</Project>

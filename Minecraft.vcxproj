@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8f34b957-bde0-4c46-8f03-85dea6ca8619}</ProjectGuid>
+    <RootNamespace>Minecraft</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MINECRAFT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include\win32;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\MinHook;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);jvm.lib;jawt.lib;libMinHook-x64-v141-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MINECRAFT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include\win32;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\MinHook;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);jvm.lib;jawt.lib;libMinHook-x64-v141-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MINECRAFT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include\win32;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\MinHook;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);jvm.lib;jawt.lib;libMinHook-x64-v141-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MINECRAFT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include\win32;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\MinHook;C:\Users\idark\Desktop\Minecraft cheats\Minecraft\Dependencies\jni\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);jvm.lib;jawt.lib;libMinHook-x64-v141-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\Includes\MinHook.h" />
+    <ClInclude Include="Dependencies\include\classfile_constants.h" />
+    <ClInclude Include="Dependencies\include\jawt.h" />
+    <ClInclude Include="Dependencies\include\jdwpTransport.h" />
+    <ClInclude Include="Dependencies\include\jni.h" />
+    <ClInclude Include="Dependencies\include\jvmti.h" />
+    <ClInclude Include="Dependencies\include\jvmticmlr.h" />
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgeCallbacks.h" />
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgeCalls.h" />
+    <ClInclude Include="Dependencies\include\win32\bridge\AccessBridgePackages.h" />
+    <ClInclude Include="Dependencies\include\win32\jawt_md.h" />
+    <ClInclude Include="Dependencies\include\win32\jni_md.h" />
+    <ClInclude Include="Dependencies\jni\include\classfile_constants.h" />
+    <ClInclude Include="Dependencies\jni\include\jawt.h" />
+    <ClInclude Include="Dependencies\jni\include\jdwpTransport.h" />
+    <ClInclude Include="Dependencies\jni\include\jni.h" />
+    <ClInclude Include="Dependencies\jni\include\jvmti.h" />
+    <ClInclude Include="Dependencies\jni\include\jvmticmlr.h" />
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgeCallbacks.h" />
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgeCalls.h" />
+    <ClInclude Include="Dependencies\jni\include\win32\bridge\AccessBridgePackages.h" />
+    <ClInclude Include="Dependencies\jni\include\win32\jawt_md.h" />
+    <ClInclude Include="Dependencies\jni\include\win32\jni_md.h" />
+    <ClInclude Include="Dependencies\MinHook\MinHook.h" />
+    <ClInclude Include="dllmain.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Hooks\Hooks.h" />
+    <ClInclude Include="JNI\Classes\EntityPlayerSP.h" />
+    <ClInclude Include="JNI\Classes\Robot.h" />
+    <ClInclude Include="JNI\Classes\WorldClient.h" />
+    <ClInclude Include="JNI\JNI.h" />
+    <ClInclude Include="math\vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Hooks\Hooks.cpp" />
+    <ClCompile Include="JNI\Classes\EntityPlayerSP.cpp" />
+    <ClCompile Include="JNI\Classes\Minecraft.cpp" />
+    <ClCompile Include="JNI\Classes\Minecraft.h" />
+    <ClCompile Include="JNI\JNI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\jni\lib\jfr\default.jfc" />
+    <None Include="Dependencies\jni\lib\jfr\profile.jfc" />
+    <None Include="Dependencies\jni\lib\security\blocked.certs" />
+    <None Include="Dependencies\jni\lib\security\cacerts" />
+    <None Include="Dependencies\jni\lib\security\default.policy" />
+    <None Include="Dependencies\jni\lib\security\public_suffix_list.dat" />
+    <None Include="Dependencies\lib\classlist" />
+    <None Include="Dependencies\lib\ct.sym" />
+    <None Include="Dependencies\lib\fontconfig.bfc" />
+    <None Include="Dependencies\lib\fontconfig.properties.src" />
+    <None Include="Dependencies\lib\jfr\default.jfc" />
+    <None Include="Dependencies\lib\jfr\profile.jfc" />
+    <None Include="Dependencies\lib\jrt-fs.jar" />
+    <None Include="Dependencies\lib\jvm.cfg" />
+    <None Include="Dependencies\lib\modules" />
+    <None Include="Dependencies\lib\psfont.properties.ja" />
+    <None Include="Dependencies\lib\psfontj2d.properties" />
+    <None Include="Dependencies\lib\security\blocked.certs" />
+    <None Include="Dependencies\lib\security\cacerts" />
+    <None Include="Dependencies\lib\security\default.policy" />
+    <None Include="Dependencies\lib\security\public_suffix_list.dat" />
+    <None Include="Dependencies\lib\src.zip" />
+    <None Include="Dependencies\lib\tzdb.dat" />
+    <None Include="Dependencies\lib\tzmappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dependencies\jni\lib\jawt.lib" />
+    <Library Include="Dependencies\jni\lib\jvm.lib" />
+    <Library Include="Dependencies\MinHook\libMinHook-x86-v141-mt.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
